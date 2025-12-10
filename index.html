@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Films Tendances</title>
+    <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
 
+    <header>
+        <h1>🎬 Films Tendances</h1>
+        <nav>
+            <a href="index.html">Accueil</a> |
+            <a href="search.html">Recherche</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Films Récents (2024)</h2>
+
+        <section id="trending-movies-container" class="movie-grid">
+            </section>
+
+        <button id="load-more-btn" disabled>Charger plus de films de 2024</button>
+
+        <p id="status-message"></p>
+    </main>
+
+    <script type="module" src="./src/index.js"></script>
 </body>
 </html>
