@@ -3,30 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil - Films Tendances</title>
+    <title>Cinéma Village - Accueil</title>
     <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>🎬 Films Tendances</h1>
-        <nav>
-            <a href="index.html">Accueil</a> |
-            <a href="search.html">Recherche</a>
-        </nav>
-    </header>
+<header>
+    <h1>🍿 Ciné Village</h1>
+    <nav>
+        <a href="index.html" class="active">Accueil</a> |
+        <a href="search.html">Recherche</a>
+    </nav>
+</header>
 
-    <main>
-        <h2>Films Récents (2024)</h2>
+<main>
+    <section class="hero">
+        <h2>Les sorties de l'année 2024</h2>
+        <p>Découvrez les films qui font l'actualité dans les villages alentours.</p>
+    </section>
 
-        <section id="trending-movies-container" class="movie-grid">
-            </section>
+    <div id="trending-container" class="movie-grid">
+    </div>
 
-        <button id="load-more-btn" disabled>Charger plus de films de 2024</button>
+    <div style="text-align: center; margin: 40px 0;">
+        <button id="load-more-trends" style="display: none;">Charger plus de films</button>
+    </div>
+</main>
 
-        <p id="status-message"></p>
-    </main>
+<script type="module" src="./src/index.js"></script>
 
-    <script type="module" src="./src/index.js"></script>
 </body>
 </html>

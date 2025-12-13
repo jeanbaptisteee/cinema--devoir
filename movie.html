@@ -8,46 +8,19 @@
 </head>
 <body>
 
-    <header>
-        <h1>Détails du Film</h1>
-        <nav>
-            <a href="index.html">Accueil</a> |
-            <a href="search.html">Recherche</a>
-        </nav>
-    </header>
+<header>
+    <h1>🎬 Détails du Film</h1>
+    <nav>
+        <a href="index.html">Accueil</a> |
+        <a href="search.html">Recherche</a>
+    </nav>
+</header>
 
-    <main id="movie-details-main">
-        <p id="status-message">Chargement des détails du film...</p>
+<main>
+    <div id="movie-details-container"></div>
+</main>
 
-        <div id="movie-details-container" style="display: none;">
+<script type="module" src="./src/movie.js"></script>
 
-            <h2 id="movie-title"></h2>
-
-            <div class="movie-content-layout">
-                <img id="movie-poster" alt="Poster du film">
-
-                <div class="movie-info">
-
-                    <h3>Grand Résumé</h3>
-                    <p id="movie-plot"></p>
-
-                    <h3>Informations Clés</h3>
-                    <p><strong>Genre :</strong> <span id="movie-genre"></span></p>
-                    <p><strong>Acteurs :</strong> <span id="movie-actors"></span></p>
-
-                    <div id="movie-bonus">
-                        <h3>Notes</h3>
-                        <ul id="movie-ratings"></ul>
-
-                        <p><strong>Date de sortie DVD :</strong> <span id="movie-dvd">N/A</span></p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <script type="module" src="./src/movie.js"></script>
 </body>
 </html>
